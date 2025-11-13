@@ -1,0 +1,20 @@
+# Ignore Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.cache
+*.vsidx
+*.vscode/
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore logs
+*.log
+
+# Ignore node_modules
+frontend/insurance-ui/node_modules/
+
+# Ignore environment-specific files
+*.env

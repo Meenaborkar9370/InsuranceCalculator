@@ -1,0 +1,31 @@
+<div class="container">
+
+  <form [formGroup]="form" (ngSubmit)="calculate()">
+
+    <label>Name</label>
+    <input formControlName="name" />
+
+    <label>Age Next Birthday</label>
+    <input formControlName="ageNextBirthday" type="number" />
+
+    <label>Death Cover</label>
+    <input formControlName="deathCover" type="number" />
+
+    <label>Occupation</label>
+    <select formControlName="occupationName">
+      <option *ngFor="let o of occupations" [value]="o">{{o}}</option>
+    </select>
+
+    <label>Death Sum Insured</label>
+    <input formControlName="deathSumInsured" type="number" />
+
+    <button type="submit" [disabled]="form.invalid">Calculate</button>
+
+  </form>
+
+  <div *ngIf="result">
+    <h3>Your Premium Result:</h3>
+    <pre>{{ result | json }}</pre>
+  </div>
+
+</div>
