@@ -47,7 +47,7 @@ InsuranceCalculatorSolution/
 
 - .NET 8 Web API  
 - Controller for premium calculation  
-- Models for Policy, Customer, Premium Rules  
+- Models for Ocupation and Premium Rules  
 - Structured routing  
 - JSON-based API responses  
 - Swagger UI enabled for API documentation  
@@ -105,5 +105,4 @@ Insurance_DB_Diagram.png
 | Backend | .NET 8 Web API |
 | Frontend | Angular |
 | Database | Diagram |
-| Testing | xUnit |
 | Tools | Swagger, NPM |
